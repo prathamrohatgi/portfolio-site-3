@@ -74,7 +74,7 @@ h1 {
   transition:translate 0.3s;
 }
 .btn-type-2 {
-  background-color: #3483de;
+  background-color:#3483de;
   border-radius:5px;
   color: white;
   padding: 7px 20px;
@@ -83,10 +83,15 @@ h1 {
 }
 .btn-type-3 {
   color: white;
-  border-radius: 40%;
-  background-color: #3483de;
-  padding: 3px 15px;
-  font-size: 12px;
+  border:none;
+  border-radius:50px;
+  background-color:#31639c;
+  padding:6px 17px;
+  font-size:10px;
+}
+.link-styling{
+  text-decoration:none;
+  color:#3483de;
 }
 .pricing p {
   width: 60%;
@@ -106,6 +111,12 @@ h1 {
   border: 1px solid lightgrey;
   text-align: center;
   margin: 10px;
+}
+.box-3-float button{
+ float:right;
+}
+.box h3,.box p{
+  padding:4px 0;
 }
 .tagline-2 {
   width: 60%;
@@ -132,11 +143,19 @@ h1 {
 .features-2-icon,
 .features-2-text {
   display: flex;
-  width: 50%;
+  align-items:baseline;
+  width:50%;
 }
 .features-2-text {
-  align-self: flex-start;
   text-align: center;
+}
+.features-3 p{
+  padding:20px 0;
+  text-align:justify;
+}
+.features-3 i{
+  color:white;
+  padding:0 20px;
 }
 .video {
   width: 50%;
@@ -186,16 +205,19 @@ h1 {
   justify-content:space-between;
 }
 .subscribe div{
-  margin:10px;
+  margin:10px 15px;
 }
 input[type="email"]{
- padding:7px;
+ padding:10px 7px;
  margin-bottom:10px;
- border-radius:10%;
+ border-radius:5px;
+ border:none;
 }
 input[type="submit"]{
   width:100%;
-  border-radius:5px;
+  border-radius:7px;
+  margin-left:0;
+  padding:7px;
 }
 footer{
   display:flex;
