@@ -18,11 +18,13 @@ header {
   color: white;
 }
 nav {
-  display: flex;
+  display:flex;
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: baseline;
+  position:sticky;
+  top:0;
 }
 nav li {
   padding: 0 12px;
@@ -30,10 +32,30 @@ nav li {
 nav li i {
   padding-left: 2px;
 }
-ul {
+nav ul {
   display: flex;
   width: 40%;
-  list-style-type: none;
+  list-style-type:none;
+}
+.dropdown-1 ul{
+  flex-direction:column;
+  background-color:white;
+  color:black;
+  width:150px;
+  padding:8px 5px;
+  margin-top:20px;
+  display:none;
+}
+.dropdown-1 ul li{
+  width:120px;
+  margin:0 auto;
+  padding:5px 10px;
+}
+/*.dropdown-1-heading:hover .dropdown-1 ul{
+  display:flex;*/
+}
+/*.dropdown-1 ul i{
+  text-align:right;*/
 }
 h1 {
   width: 30%;
@@ -48,6 +70,15 @@ h1 {
 .header-text h2 {
   margin: 15px 0;
   font-size: 22px;
+}
+@media  screen and (max-width:500px){
+  nav{
+  flex-direction:column;
+  position:static;
+  }
+  header{
+    width:100%;
+  }
 }
 .btn-type-1 {
   padding: 7px 20px;
@@ -118,6 +149,14 @@ h1 {
 .box h3,.box p{
   padding:4px 0;
 }
+@media  screen and (max-width:500px){
+ .features{
+   flex-direction:column;
+   width:100%;
+ }
+
+}
+
 .tagline-2 {
   width: 60%;
   margin: 0 auto;
@@ -181,6 +220,17 @@ h1 {
 .tagline-3:hover{
   cursor:pointer;
   text-decoration:underline;
+}
+@media  screen and (max-width:500px){
+.subscribe{
+  flex-direction:column;
+}
+.video{
+  width:100vw;
+}
+body{
+  min-width:100%;
+}
 }
 .features-3{
   color:white;
