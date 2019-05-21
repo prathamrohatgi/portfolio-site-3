@@ -17,6 +17,9 @@ header {
   height: 100vh;
   color: white;
 }
+.header-padding{
+  width:100%;
+}
 nav {
   display:flex;
   width: 80%;
@@ -78,6 +81,10 @@ h1 {
   }
   header{
     width:100%;
+    background:none;
+  }
+  .header-padding{
+    background: url("../images/background-img.jpg") no-repeat center center fixed;
   }
   .header-text img{
     width:100%;
