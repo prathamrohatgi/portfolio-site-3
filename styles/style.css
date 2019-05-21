@@ -243,6 +243,9 @@ h1 {
 .features-2{
   flex-direction:column;
 }
+.features-2 .box{
+  width:100%;
+}
 .tagline-3{
   font-size:24px;
 }
@@ -310,5 +313,11 @@ footer{
 @media screen and (max-width:500px){
   footer{
     flex-direction:column;
+  }
+  input[type="email"]{
+    width:100%;
+  }
+  footer .icons{
+    padding:12px 0;
   }
 }
