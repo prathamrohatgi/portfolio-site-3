@@ -108,7 +108,7 @@ h1 {
   header{
     width:100%;
     background:none;
-    height:60vh;
+    height:auto;
   }
   .header-padding{
     background: url("../images/background-img.jpg") no-repeat center center fixed;
@@ -120,6 +120,7 @@ h1 {
   }
   .header-text{
     margin:0;
+    width:100%;
   }
   .header-text img{
     width:100%;
